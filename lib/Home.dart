@@ -7,7 +7,7 @@ class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
 
   @override
-  State<Homescreen> createState() => _HomescreenState();
+  State<Homescreen> createState() =>_HomescreenState();
 }
 
 class _HomescreenState extends State<Homescreen> {
@@ -19,7 +19,6 @@ class _HomescreenState extends State<Homescreen> {
         backgroundColor: Colors.cyanAccent.shade100,
         title:
         Container(
-      // padding: const EdgeInsets.only(left: 2, right: 2),
       height: 45,
       width: 400.0,
       child: TextField(
@@ -45,7 +44,7 @@ class _HomescreenState extends State<Homescreen> {
               height: 50.0,
               width: 400.0,
               color: Colors.lightBlueAccent.shade100,
-              child: Row(
+              child: const Row(
                 children: [
                   SizedBox(width: 10.0,),
                   Icon(Icons.location_on_outlined,size: 30,),
@@ -58,7 +57,7 @@ class _HomescreenState extends State<Homescreen> {
               ),
             ),
             
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -74,9 +73,9 @@ class _HomescreenState extends State<Homescreen> {
                 ],
               ),
             ),
-            SizedBox(height: 2.0,),
+            const SizedBox(height: 2.0,),
 
-            SingleChildScrollView(
+            const SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -88,7 +87,7 @@ class _HomescreenState extends State<Homescreen> {
                 ],
               ),
             ),
-            SizedBox(height: 6.0,),
+            const SizedBox(height: 6.0,),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -125,7 +124,7 @@ class _HomescreenState extends State<Homescreen> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 4.0,),
+                  const SizedBox(width: 4.0,),
                   Container(
                     height:216.0,
                     width: 200.0,
@@ -158,7 +157,7 @@ class _HomescreenState extends State<Homescreen> {
                       ],
                     ),
                   ),
-                  SizedBox(width: 4.0,),
+                  const SizedBox(width: 4.0,),
                   Container(
                     height:216.0,
                     width: 200.0,
@@ -195,47 +194,47 @@ class _HomescreenState extends State<Homescreen> {
                 ],
             ),
             ),
-            SizedBox(height: 4.0,),
+            const SizedBox(height: 4.0,),
             Container(
               height: 140.0,
               width: 400.0,
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.white),
-                  image: DecorationImage( image:AssetImage('assets/downbanner.jpg'),
+                  image: const DecorationImage( image:AssetImage('assets/downbanner.jpg'),
                       fit: BoxFit.fill),
                 )
               ),
-            SizedBox(height: 4.0,),
+            const SizedBox(height: 4.0,),
             ButtonBar(
               children: [
                Row(
                  children: [
                    Column(children: [
                      Icon(Icons.home,size: 34,color: Colors.grey.shade800,),
-                     Text('Home')
+                     const Text('Home')
                    ],),
-                 SizedBox(width: 50.0,),
+                 const SizedBox(width: 50.0,),
                    Column(children: [
                      Icon(Icons.person,size: 34,color: Colors.grey.shade800,),
-                     Text('You')
+                     const Text('You')
                    ],),
-                   SizedBox(width: 50.0,),
+                   const SizedBox(width: 50.0,),
 
                    Column(children: [
                      Icon(Icons.autorenew_rounded,size: 34,color: Colors.grey.shade800,),
-                     Text('More')
+                     const Text('More')
                    ],),
-                   SizedBox(width: 50.0,),
+                   const SizedBox(width: 50.0,),
 
                    Column(children: [
                      Icon(Icons.shopping_cart_outlined,size: 34,color: Colors.grey.shade800,),
-                     Text('Cart')
+                     const Text('Cart')
                    ],),
-                   SizedBox(width: 50.0,),
+                   const SizedBox(width: 50.0,),
 
                    Column(children: [
                      Icon(Icons.menu,size: 34,color: Colors.grey.shade800,),
-                     Text('Menu')
+                     const Text('Menu')
                    ],),
                  ],
                )

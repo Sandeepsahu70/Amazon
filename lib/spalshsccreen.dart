@@ -12,8 +12,7 @@ class _SplashscreenState extends State<Splashscreen> {
   Widget build(BuildContext context) {
     Future.delayed(Duration(seconds: 3),(){
       Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
-    }
-    );
+    });
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
