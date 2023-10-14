@@ -56,8 +56,7 @@ class _HomescreenState extends State<Homescreen> {
 
               ),
             ),
-            
-            const SingleChildScrollView(
+             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
@@ -205,44 +204,10 @@ class _HomescreenState extends State<Homescreen> {
                 )
               ),
             const SizedBox(height: 4.0,),
-            ButtonBar(
-              children: [
-               Row(
-                 children: [
-                   Column(children: [
-                     Icon(Icons.home,size: 34,color: Colors.grey.shade800,),
-                     const Text('Home')
-                   ],),
-                 const SizedBox(width: 50.0,),
-                   Column(children: [
-                     Icon(Icons.person,size: 34,color: Colors.grey.shade800,),
-                     const Text('You')
-                   ],),
-                   const SizedBox(width: 50.0,),
-
-                   Column(children: [
-                     Icon(Icons.autorenew_rounded,size: 34,color: Colors.grey.shade800,),
-                     const Text('More')
-                   ],),
-                   const SizedBox(width: 50.0,),
-
-                   Column(children: [
-                     Icon(Icons.shopping_cart_outlined,size: 34,color: Colors.grey.shade800,),
-                     const Text('Cart')
-                   ],),
-                   const SizedBox(width: 50.0,),
-
-                   Column(children: [
-                     Icon(Icons.menu,size: 34,color: Colors.grey.shade800,),
-                     const Text('Menu')
-                   ],),
-                 ],
-               )
-              ],
-            )
           ]
         ),
-      )
-      );
+      ),
+
+    );
   }
 }

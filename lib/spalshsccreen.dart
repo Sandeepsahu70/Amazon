@@ -1,5 +1,7 @@
 import 'package:amazon/Home.dart';
 import'package:flutter/material.dart';
+
+import 'bottomnavigation.dart';
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
 
@@ -11,7 +13,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     Future.delayed(Duration(seconds: 3),(){
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>Bottomnavigation()),);
     });
     return Scaffold(
       body: Container(
