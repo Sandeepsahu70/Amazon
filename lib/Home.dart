@@ -42,15 +42,15 @@ class _HomescreenState extends State<Homescreen> {
           children: [
             Container(
               height: 50.0,
-              width: 400.0,
+              width: 380.0,
               color: Colors.lightBlueAccent.shade100,
               child: const Row(
                 children: [
-                  SizedBox(width: 10.0,),
+                  SizedBox(width: 4.0,),
                   Icon(Icons.location_on_outlined,size: 30,),
                   SizedBox(width: 4.0,),
                   Text('Select a location to see product avalibility',
-                    style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
+                    style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400),),
                   Icon(Icons.keyboard_arrow_down,size: 30,)
                 ],
 
